@@ -1,0 +1,16 @@
+{
+  "name": "typescript-basic-examples",
+  "module": "examples/console.ts",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/bun": "latest",
+    "eslint": "^9.20.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.23.0",
+    "vitest": "^3.0.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
