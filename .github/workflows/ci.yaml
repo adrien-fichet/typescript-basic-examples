@@ -1,5 +1,6 @@
 name: CI
 on: [push]
+# todo: tsc, build, tests, check-updates, etc.
 jobs:
   eslint:
     runs-on: ubuntu-latest
@@ -16,5 +17,3 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install
       - run: bun prettier . --check
-
-# todo: tsc, build, tests, check-updates, etc.
