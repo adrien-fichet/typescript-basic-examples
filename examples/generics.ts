@@ -8,7 +8,10 @@ console.log(hello)
 const numbers = identity<number[]>([1, 2, 3])
 console.log(numbers)
 
-const person = identity<{ name: string; age: number }>({ name: "John", age: 30 })
+const person = identity<{ name: string; age: number }>({
+  name: "John",
+  age: 30,
+})
 console.log(person)
 
 type Cat = {

@@ -50,5 +50,7 @@ const books: Book[] = [
   { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
 ]
 const john = new LibraryUser("John")
-books.forEach((book) => { john.library.addBook(book) })
+books.forEach((book) => {
+  john.library.addBook(book)
+})
 console.log(john.info())

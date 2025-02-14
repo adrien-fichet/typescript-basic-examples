@@ -1,7 +1,12 @@
 // https://medium.com/@liadshiran92/advanced-console-log-tips-tricks-fa3762930bca
 //console.log(console)
 
-const person = { name: "John", age: 30, city: "New York", pets: ["Riki", "Fooki"] }
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  pets: ["Riki", "Fooki"],
+}
 
 console.log(person.name, person.age, person.city)
 console.dir(person) // nicer output than console.log
@@ -9,11 +14,13 @@ console.dir(person) // nicer output than console.log
 console.assert(
   // conditional log
   person.pets.find((pet) => pet === "hamster"),
-  "No hamster found!"
+  "No hamster found!",
 )
 
 const countLabel = "Pet"
-person.pets.forEach(() => { console.count(countLabel) }) // labeled counter
+person.pets.forEach(() => {
+  console.count(countLabel) // labeled counter
+})
 
 console.table(person) // table output
 
@@ -44,4 +51,7 @@ console.log("World!")
 console.groupEnd()
 console.groupEnd()
 
-console.log("%c Hello!", "color: cyan; background-color: yellow; font-size: 20px") // stylised-output, browser-only
+console.log(
+  "%c Hello!",
+  "color: cyan; background-color: yellow; font-size: 20px",
+) // stylised-output, browser-only

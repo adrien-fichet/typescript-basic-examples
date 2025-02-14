@@ -14,5 +14,9 @@ const cat = {
 }
 
 const { name, age: catAge } = cat // destructuring with the same name and aliasing
-const { colors: { main: mainColor }} = cat // nested destructuring
-console.log(`The cat named ${name} is ${catAge.toString()} year(s) old and its main color is ${mainColor.toString()}.`)
+const {
+  colors: { main: mainColor },
+} = cat // nested destructuring
+console.log(
+  `The cat named ${name} is ${catAge.toString()} year(s) old and its main color is ${mainColor.toString()}.`,
+)
