@@ -13,7 +13,7 @@ console.assert(
 )
 
 const countLabel = "Pet"
-person.pets.forEach(() => console.count(countLabel)) // labeled counter
+person.pets.forEach(() => { console.count(countLabel) }) // labeled counter
 
 console.table(person) // table output
 

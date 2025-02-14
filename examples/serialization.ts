@@ -15,5 +15,5 @@ const riki = new Cat("Riki")
 const rikiToJson = JSON.stringify(riki)
 console.log(rikiToJson, Bun.hash(rikiToJson))
 
-const rikiFromJson: Cat = JSON.parse(rikiToJson) // plain object to Cat (explicit type annotation)
+const rikiFromJson = JSON.parse(rikiToJson) as Cat
 console.log(rikiFromJson, riki.meow())
