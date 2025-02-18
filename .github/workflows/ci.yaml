@@ -1,6 +1,6 @@
 name: CI
 on: [push]
-# todo: tsc, build, tests, check-updates, etc.
+# todo: cache, tsc, build, tests, check-updates, spelling, etc.
 jobs:
   eslint:
     runs-on: ubuntu-latest
