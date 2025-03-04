@@ -1,7 +1,7 @@
 enum Color {
   Black,
   White,
-  Gray,
+  Gray
 }
 
 const cat = {
@@ -9,14 +9,14 @@ const cat = {
   age: 4,
   colors: {
     main: Color.Gray,
-    secondary: Color.White,
-  },
-}
+    secondary: Color.White
+  }
+};
 
-const { name, age: catAge } = cat // destructuring with the same name and aliasing
+const { name, age: catAge } = cat; // destructuring with the same name and aliasing
 const {
-  colors: { main: mainColor },
-} = cat // nested destructuring
+  colors: { main: mainColor }
+} = cat; // nested destructuring
 console.log(
-  `The cat named ${name} is ${catAge.toString()} year(s) old and its main color is ${mainColor.toString()}.`,
-)
+  `The cat named ${name} is ${catAge.toString()} year(s) old and its main color is ${mainColor.toString()}.`
+);

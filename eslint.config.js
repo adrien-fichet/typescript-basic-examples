@@ -1,7 +1,7 @@
-import globals from "globals"
-import pluginJs from "@eslint/js"
-import tseslint from "typescript-eslint"
-import eslintConfigPrettier from "eslint-config-prettier"
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import tseslint from "typescript-eslint";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -12,11 +12,11 @@ export default [
       globals: globals.browser,
       parserOptions: {
         project: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
+        tsconfigRootDir: import.meta.dirname
+      }
+    }
   },
   pluginJs.configs.recommended,
   eslintConfigPrettier,
-  ...tseslint.configs.strictTypeChecked,
-]
+  ...tseslint.configs.strictTypeChecked
+];

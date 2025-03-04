@@ -1,19 +1,19 @@
 class Cat {
-  name: string = ""
+  name: string = "";
 
   constructor(name: string) {
-    this.name = name
+    this.name = name;
   }
 
   meow() {
-    return `${this.name} says meow!`
+    return `${this.name} says meow!`;
   }
 }
 
-const riki = new Cat("Riki")
+const riki = new Cat("Riki");
 
-const rikiToJson = JSON.stringify(riki)
-console.log(rikiToJson, Bun.hash(rikiToJson))
+const rikiToJson = JSON.stringify(riki);
+console.log(rikiToJson, Bun.hash(rikiToJson));
 
-const rikiFromJson = JSON.parse(rikiToJson) as Cat
-console.log(rikiFromJson, riki.meow())
+const rikiFromJson = JSON.parse(rikiToJson) as Cat;
+console.log(rikiFromJson, riki.meow());
